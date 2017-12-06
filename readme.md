@@ -1,3 +1,8 @@
+### Post Camila Sobre APIs REST com Laravel
+
+http://blog.4linux.com.br/2017/10/api-restful-com-laravel/
+https://www.slideshare.net/CamilaFernandes32/api-restfull-com-laravel
+
 # Instalar o Composer
 https://github.com/Diego-Brocanelli/ambiente-dev-php-ubuntu
 
