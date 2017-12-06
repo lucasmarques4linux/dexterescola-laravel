@@ -80,7 +80,9 @@ $aluno = App\Model\Aluno::create["atributo" => "valor"];
 ```
 
 ### Buscando um Aluno 
+```
 $aluno = App\Model\Aluno::find($id);
+```
 
 ## License
 
