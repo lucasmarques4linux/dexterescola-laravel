@@ -63,9 +63,24 @@ php artisan make:model Model/Aluno // Nome da tabela no singular - convenção
 # Tinker
 Interface de linha de comando para rodar a aplicação no terminal
 
-$aluno = new App\Model\Aluno;      // Criando um aluno;
-$aluno->atributo = "valor"                 // Adionando valores aos atributos.
-$aluno->save()                                   // Salva no banco de dados
+### Criando um Aluno
+```
+$aluno = new App\Model\Aluno; // Criando um aluno;
+$aluno->atributo = "valor" // Adionando valores aos atributos.
+$aluno->save() // Salva no banco de dados
+```
+
+Usando direto, mas para isso é preciso colocar no Model a váriavel `protected $fillable`;
+
+```
+protected $fillable = ["atributo","atributo"];
+
+$aluno = App\Model\Aluno::create["atributo" => "valor"];
+
+```
+
+### Buscando um Aluno 
+$aluno = App\Model\Aluno::find($id);
 
 ## License
 
