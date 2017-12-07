@@ -52,7 +52,10 @@ DB_DATABASE=dexterescola
 DB_USERNAME=linux
 DB_PASSWORD=123
 ```
-
+Setar no arquivo config/database.php
+```
+'default' => env('DB_CONNECTION', 'pgsql'
+```
 https://laravel.com/docs/5.5/migrations
 
 php artisan make:migration create_alunos_table --create=alunos
