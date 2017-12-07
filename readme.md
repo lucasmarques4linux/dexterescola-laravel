@@ -1,6 +1,7 @@
 ### Post Camila Sobre APIs REST com Laravel
 
 http://blog.4linux.com.br/2017/10/api-restful-com-laravel/
+
 https://www.slideshare.net/CamilaFernandes32/api-restfull-com-laravel
 
 # Instalar o Composer
@@ -88,6 +89,32 @@ $aluno = App\Model\Aluno::create["atributo" => "valor"];
 ```
 $aluno = App\Model\Aluno::find($id);
 ```
+
+### Recebendo post
+
+public function salvar (Request $request){
+     $request->all(); // dados vindos da requisição;
+
+}
+
+### Buscando todos
+     $alunos = new Aluno();
+     $alunos->get();
+
+     foreach($alunos as $aluno){ $aluno->atributos}
+
+### Buscando um
+     $aluno = Aluno::find($id);
+     $aluno = Aluno::findOrFail($id); // Se não encontrar retorna erro;
+
+### Atualizar
+     Busca primeiro e depois;
+     $aluno->update($request->all());
+
+### Deletar
+     Busca primeiro e depois;
+     $aluno->delete();
+
 
 ## License
 
