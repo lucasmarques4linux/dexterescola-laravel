@@ -30,6 +30,10 @@ chmod para corrigir as permissões de usuário das pastas
 
 php artisan key:generate
 
+### Comandos para dar permissão a pasta "storage":
+sudo chmod -R gu+w storage
+sudo chmod -R guo+w storage
+
 # Artisan
 http://www.vedovelli.com.br/web-development/o-que-e-o-artisan/
 
