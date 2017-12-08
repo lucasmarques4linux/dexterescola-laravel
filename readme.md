@@ -34,6 +34,10 @@ php artisan key:generate
 sudo chmod -R gu+w storage
 sudo chmod -R guo+w storage
 
+### Remover bloqueio de prevenção CSRF (do inglês Cross-site request forgery- Falsificação de solicitação entre sites
+abrir o arquivo `App/Http/Kernel.php`
+Comentar a linha `\App\Http\Middleware\VerifyCsrfToken::class,`
+
 # Artisan
 http://www.vedovelli.com.br/web-development/o-que-e-o-artisan/
 
